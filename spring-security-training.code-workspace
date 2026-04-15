@@ -1,0 +1,31 @@
+{
+    "folders": [
+        {
+            "name": "step0-starter",
+            "path": "step0-starter"
+        },
+        {
+            "name": "step1-basic-filter",
+            "path": "step1-basic-filter"
+        },
+        {
+            "name": "step2-custom-auth",
+            "path": "step2-custom-auth"
+        },
+        {
+            "name": "step3-error-handling",
+            "path": "step3-error-handling"
+        },
+        {
+            "name": "practice",
+            "path": "practice"
+        },
+        {
+            "name": "step-guides",
+            "path": "step-guides"
+        }
+    ],
+    "settings": {
+        "java.compile.nullAnalysis.mode": "automatic"
+    }
+}

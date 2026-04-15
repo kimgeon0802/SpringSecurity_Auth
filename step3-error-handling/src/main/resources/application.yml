@@ -1,0 +1,47 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: step3-error-handling
+
+  datasource:
+    url: jdbc:h2:mem:securitydb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  sql:
+    init:
+      mode: always
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+# ==============================================
+# [Step 3] Exception Handling - REST API JSON 응답
+# ==============================================
+# 17:00~18:00: Exception Handling
+# - AuthenticationEntryPoint: 401 Unauthorized JSON 응답
+# - AccessDeniedHandler: 403 Forbidden JSON 응답
+# - 커스텀 에러 응답 규격화
+# ==============================================
+
+logging:
+  level:
+    org.springframework.security: TRACE
+    com.security.training.step3: DEBUG
