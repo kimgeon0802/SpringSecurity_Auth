@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: step0-starter
+  # [Step 0] 고정 아이디/비밀번호 설정 (시연 편의성)
+  security:
+    user:
+      name: user
+      password: "1234"
+
+# ==============================================
+# [Step 0] 기본 Spring Boot + Security 상태
+# - 모든 엔드포인트에 기본 인증이 적용됨
+# - 세션 기반 인증(JSESSIONID) 동작 확인
+# ==============================================
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    org.springframework.security.web.authentication: TRACE # 로그인/세션 생성 상세 로그
+    org.springframework.security.web.session: TRACE        # 세션 관리 상세 로그
